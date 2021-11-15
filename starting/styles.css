@@ -1,6 +1,7 @@
 html {
     font-size: 16px;
     font-family: sans-serif;
+    color: cornflowerblue;
 }
 header{
     display: flex;
@@ -10,13 +11,13 @@ header{
     position: fixed;
     width: 100%;
     height: 4.375rem;
-    box-shadow: 0 0.5rem 0.375px -0.375px black;
+    box-shadow: 0 0.5rem 0.375px -0.375px cornflowerblue;
     background-color: white;
 }
 header a,h1{
     margin: 0 1.25rem;
     text-decoration: none;
-    color: black;
+    color: cornflowerblue;
 }
 
 .welcome{
@@ -38,4 +39,52 @@ header a,h1{
 }
 .message h3{
     color:  cornflowerblue;
+}
+.photos{
+    display: flex;
+    justify-content: space-between;
+    height: 18.75rem;
+    margin: 5rem 1rem;
+}
+.photos img{
+    object-fit: cover;
+
+    width: 30%;
+}
+.quote{
+    height: 12.5rem;
+    background-color: cornflowerblue;
+    text-indent: center;
+    padding-top: 5rem;
+}
+.quote h2, .quote p{
+    color: white;
+    margin-left: 1rem;
+}
+.invitation{
+    text-align: center;
+}
+.invitation img{
+    height: 35rem;
+    width: auto;
+}
+footer{
+    display: flex;
+    height: 4rem;
+    background-color: cornflowerblue;
+    align-items: center;
+}
+footer a{
+    color: white;
+    padding: 1rem 2rem;
+}
+
+@media only screen and (max-width: 850px) {
+    .invitation img{
+    width: 100%;
+    }
+    .photos{
+    flex-direction: column;
+    width: 100%;
+    }
 }
